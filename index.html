@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kausani Community ID</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+    .abba {
+      width: 90%;
+      height: 300px;
+      overflow: hidden;
+      border-radius:20px;
+      
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h2 {
+      margin: 20px 10px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <video class="abba" id="bgVideo" autoplay muted loop playsinline>
+  <source src="Welcome.mp4" type="video/mp4">
+</video>
+
+<button onclick="enableSound()">🔊 Enable Sound</button>
+
+<script>
+function enableSound() {
+  const video = document.getElementById("bgVideo");
+  video.muted = false;
+  video.play();
+}
+</script>
+
+  <h2>Click the link below and get yours</h2>
+
+  <!-- CONNECTED HERE -->
+  <a href="register.html">Get Started</a>
+</body>
+</html>
