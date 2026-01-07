@@ -14,9 +14,9 @@
     .abba {
       margin-top:20px;
       width: 96%;
-      height: 800px;
+      height: 1000px;
       overflow: hidden;
-      border-radius:20px;
+      border-radius:10px;
       
     }
     video {
@@ -38,6 +38,9 @@
       font-weight: bold;
       font-size:1cm;
     }
+    .baba{
+      font-size:50px;
+    }
   </style>
 </head>
 
@@ -48,7 +51,7 @@
 
 <button onclick="enableSound()">🔊 Enable Sound</button>
 
-<script>
+<script class="baba">
 function enableSound() {
   const video = document.getElementById("bgVideo");
   video.muted = false;
