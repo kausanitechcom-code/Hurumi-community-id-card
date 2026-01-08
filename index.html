@@ -41,6 +41,13 @@
     .baba{
       font-size:50px;
     }
+        .bobo{
+    font-size:30px;
+    background-color:maroon;
+    border:none;
+    border-radius:2px;
+    color:white;
+        }
   </style>
 </head>
 
@@ -49,9 +56,9 @@
   <source src="Welcome.mp4" type="video/mp4">
 </video>
 
-<button onclick="enableSound()">🔊 Enable Sound</button>
+<button class="bobo" onclick="enableSound()">🔊 Enable Sound</button>
 
-<script class="baba">
+<script>
 function enableSound() {
   const video = document.getElementById("bgVideo");
   video.muted = false;
